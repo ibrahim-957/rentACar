@@ -1,4 +1,4 @@
-package kodlama.io.rentACar.Business.Requests;
+package kodlama.io.rentACar.Business.Requests.Model;
 
 import jakarta.validation.constraints.NotBlank;
 import jakarta.validation.constraints.NotNull;

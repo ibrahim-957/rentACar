@@ -1,10 +1,10 @@
 package kodlama.io.rentACar.Business.Concretes;
 
 import kodlama.io.rentACar.Business.Abstracts.IBrandService;
-import kodlama.io.rentACar.Business.Requests.CreateBrandRequest;
-import kodlama.io.rentACar.Business.Requests.UpdateBrandRequest;
-import kodlama.io.rentACar.Business.Responses.GetAllBrandResponse;
-import kodlama.io.rentACar.Business.Responses.GetByIdBrandResponse;
+import kodlama.io.rentACar.Business.Requests.Brand.CreateBrandRequest;
+import kodlama.io.rentACar.Business.Requests.Brand.UpdateBrandRequest;
+import kodlama.io.rentACar.Business.Responses.Brand.GetAllBrandResponse;
+import kodlama.io.rentACar.Business.Responses.Brand.GetByIdBrandResponse;
 import kodlama.io.rentACar.Business.Rules.BrandBusinessRules;
 import kodlama.io.rentACar.Core.Utilities.Mappers.ModelMapperService;
 import kodlama.io.rentACar.DataAccess.Abstracts.IBrandRepository;
@@ -12,7 +12,6 @@ import kodlama.io.rentACar.Entites.Concretes.Brand;
 import lombok.AllArgsConstructor;
 import org.springframework.stereotype.Service;
 
-import java.util.ArrayList;
 import java.util.List;
 import java.util.stream.Collectors;
 

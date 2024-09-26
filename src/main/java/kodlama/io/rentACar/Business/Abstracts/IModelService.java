@@ -1,12 +1,10 @@
 package kodlama.io.rentACar.Business.Abstracts;
 
-import kodlama.io.rentACar.Business.Requests.CreateModelRequest;
-import kodlama.io.rentACar.Business.Requests.UpdateModelRequest;
-import kodlama.io.rentACar.Business.Responses.GetAllModelsResponse;
-import kodlama.io.rentACar.Business.Responses.GetModelByIdResponse;
-import kodlama.io.rentACar.Business.Responses.GetModelsByBrandNameResponse;
-import kodlama.io.rentACar.Entites.Concretes.Brand;
-import kodlama.io.rentACar.Entites.Concretes.Model;
+import kodlama.io.rentACar.Business.Requests.Model.CreateModelRequest;
+import kodlama.io.rentACar.Business.Requests.Model.UpdateModelRequest;
+import kodlama.io.rentACar.Business.Responses.Model.GetAllModelsResponse;
+import kodlama.io.rentACar.Business.Responses.Model.GetModelByIdResponse;
+import kodlama.io.rentACar.Business.Responses.Model.GetModelsByBrandNameResponse;
 
 import java.util.List;
 

@@ -1,7 +1,5 @@
 package kodlama.io.rentACar.DataAccess.Abstracts;
 
-import kodlama.io.rentACar.Business.Responses.GetModelsByBrandNameResponse;
-import kodlama.io.rentACar.Entites.Concretes.Brand;
 import kodlama.io.rentACar.Entites.Concretes.Model;
 import org.springframework.data.jpa.repository.JpaRepository;
 

@@ -1,9 +1,9 @@
 package kodlama.io.rentACar.Business.Abstracts;
 
-import kodlama.io.rentACar.Business.Requests.CreateBrandRequest;
-import kodlama.io.rentACar.Business.Requests.UpdateBrandRequest;
-import kodlama.io.rentACar.Business.Responses.GetAllBrandResponse;
-import kodlama.io.rentACar.Business.Responses.GetByIdBrandResponse;
+import kodlama.io.rentACar.Business.Requests.Brand.CreateBrandRequest;
+import kodlama.io.rentACar.Business.Requests.Brand.UpdateBrandRequest;
+import kodlama.io.rentACar.Business.Responses.Brand.GetAllBrandResponse;
+import kodlama.io.rentACar.Business.Responses.Brand.GetByIdBrandResponse;
 
 import java.util.List;
 

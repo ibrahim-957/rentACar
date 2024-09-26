@@ -1,4 +1,4 @@
-package kodlama.io.rentACar.Business.Responses;
+package kodlama.io.rentACar.Business.Responses.Model;
 
 import lombok.AllArgsConstructor;
 import lombok.Data;
@@ -7,8 +7,8 @@ import lombok.NoArgsConstructor;
 @Data
 @AllArgsConstructor
 @NoArgsConstructor
-public class GetModelsByBrandNameResponse {
+public class GetAllModelsResponse {
     private int id;
     private String name;
-    private String brandName;
+    private String  brandName;
 }
