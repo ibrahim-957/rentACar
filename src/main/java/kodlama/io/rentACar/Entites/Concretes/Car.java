@@ -40,10 +40,10 @@ public class Car {
     @JoinColumn(name = "brand_id")
     private Brand brand;
 
-    @OneToMany(mappedBy = "rental")
+    @OneToMany(mappedBy = "car")
     private List<Rental> rentals;
 
-    @OneToMany(mappedBy = "maintenance")
+    @OneToMany(mappedBy = "car")
     private List<Maintenance> maintenances;
 
     @ManyToOne

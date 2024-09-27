@@ -33,6 +33,6 @@ public class Customer {
     @Column(name = "registrationDate")
     private LocalDateTime registrationDate;
 
-    @OneToMany(mappedBy = "rental")
+    @OneToMany(mappedBy = "customer")
     private List<Rental> rentals;
 }

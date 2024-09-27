@@ -24,6 +24,6 @@ public class Category {
     @Column(name = "description")
     private String description;
 
-    @OneToMany(mappedBy = "car")
+    @OneToMany(mappedBy = "category")
     private List<Car> cars;
 }

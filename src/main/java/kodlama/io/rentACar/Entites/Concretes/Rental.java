@@ -34,10 +34,10 @@ public class Rental {
     @JoinColumn(name = "car_id")
     private Car car;
 
-    @OneToOne(mappedBy = "payment")
+    @OneToOne(mappedBy = "rental")
     private Payment payment;
 
-    @OneToOne(mappedBy = "invoice")
+    @OneToOne(mappedBy = "rental")
     private Invoice invoice;
 }
 
