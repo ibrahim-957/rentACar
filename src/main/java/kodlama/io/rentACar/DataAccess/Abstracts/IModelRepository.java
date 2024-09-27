@@ -7,4 +7,8 @@ import java.util.List;
 
 public interface IModelRepository extends JpaRepository<Model,Integer> {
     List<Model> findByBrand_Name(String brandName);
+
+    boolean existsByName(String name);
+
+    boolean hasAssociatedModels(int brandId);
 }

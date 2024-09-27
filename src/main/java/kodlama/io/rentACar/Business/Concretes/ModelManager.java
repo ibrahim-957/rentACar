@@ -11,6 +11,7 @@ import kodlama.io.rentACar.DataAccess.Abstracts.IModelRepository;
 import kodlama.io.rentACar.Entites.Concretes.Model;
 import lombok.AllArgsConstructor;
 import org.springframework.stereotype.Service;
+import org.springframework.transaction.annotation.Transactional;
 
 import java.util.List;
 import java.util.stream.Collectors;
@@ -22,6 +23,7 @@ public class ModelManager implements IModelService {
     private IModelRepository modelRepository;
     private ModelMapperService modelMapperService;
     @Override
+    @Transactional(readOnly = true)
     public List<GetAllModelsResponse> getAll() {
         List<Model> models = modelRepository.findAll();
 
@@ -32,6 +34,7 @@ public class ModelManager implements IModelService {
     }
 
     @Override
+    @Transactional(readOnly = true)
     public GetModelByIdResponse getById(int id) {
         Model model = this.modelRepository.findById(id).orElseThrow();
         GetModelByIdResponse response = this.modelMapperService.forResponse()
@@ -40,6 +43,7 @@ public class ModelManager implements IModelService {
     }
 
     @Override
+    @Transactional(readOnly = true)
     public List<GetModelsByBrandNameResponse> findByBrand(String brandName) {
         List<Model> models = modelRepository.findByBrand_Name(brandName);
         List<GetModelsByBrandNameResponse> modelsByBrandNameResponses = models.stream()
@@ -49,18 +53,21 @@ public class ModelManager implements IModelService {
     }
 
     @Override
+    @Transactional
     public void add(CreateModelRequest createModelRequest) {
         Model model = this.modelMapperService.forRequest().map(createModelRequest, Model.class);
         this.modelRepository.save(model);
     }
 
     @Override
+    @Transactional
     public void update(UpdateModelRequest updateModelRequest) {
         Model model = this.modelMapperService.forRequest().map(updateModelRequest, Model.class);
         this.modelRepository.save(model);
     }
 
     @Override
+    @Transactional
     public void delete(int id) {
         this.modelRepository.deleteById(id);
     }

@@ -1,6 +1,7 @@
 package kodlama.io.rentACar.Entites.Concretes;
 
 import jakarta.persistence.*;
+import jakarta.validation.constraints.Size;
 import lombok.*;
 
 import java.util.List;

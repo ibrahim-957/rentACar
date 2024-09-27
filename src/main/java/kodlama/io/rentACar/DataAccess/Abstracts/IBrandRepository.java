@@ -7,4 +7,6 @@ import org.springframework.data.jpa.repository.JpaRepository;
 public interface IBrandRepository extends JpaRepository<Brand, Integer> {
     boolean existsByName(String name);  //spring jpa keywords
 
+    boolean hasAssociatedModels(int brandId);
+
 }
